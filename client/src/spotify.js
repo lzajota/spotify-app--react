@@ -169,7 +169,7 @@ export const getTopTracks = (time_range = 'short_term') => {
  */
 export const getPlaylistById = playlist_id => {
   return axios.get(`/playlists/${playlist_id}`);
-};
+}
 
 /**
  * Get Audio Features for Several Tracks
