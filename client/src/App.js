@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import {
   BrowserRouter as Router,
-  Switch,
+  Routes,
   Route,
   useLocation,
 } from 'react-router-dom';
@@ -58,7 +58,7 @@ function App() {
           <Router>
             <ScrollToTop />
 
-            <Switch>
+            <Routes>
               <Route path="/top-artists">
                 <TopArtists />
               </Route>
@@ -74,7 +74,7 @@ function App() {
               <Route path="/">
                 <Profile />
               </Route>
-            </Switch>
+            </Routes>
           </Router>
         </>
       )}
